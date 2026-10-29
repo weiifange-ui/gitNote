@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<title>gitNote</title>
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        .weave {
+            display: flex;
+            flex-direction: column;
+            gap: 3px;
+            padding: 5px;
+
+            width: 100%;
+            max-width: 100%;
+            overflow-x: auto;
+        }
+
+        .row {
+            display: flex;
+            gap: 3px;
+        }
+
+        .row:nth-child(even) {
+            margin-left: 25px;
+        }
+
+        .block {
+            width: fit-content;
+            /* 依內容需要的寬度調整 */
+            height: auto;
+            max-width: 100%;
+
+            background: #b1b0f7;
+            padding: 18px;
+            /* 左右各保留 18px */
+
+
+            display: flex;
+            justify-content: center;
+            /* 水平置中 */
+            align-items: center;
+            /* 垂直置中 */
+            box-sizing: border-box;
+
+            font-size: 24px;
+            /* 字體大小 */
+            line-height: 1.4;
+
+
+        }
+
+        .block img {
+            display: block;
+
+            max-width: 100%;
+            max-height: 100%;
+            width: auto;
+            height: auto;
+            object-fit: contain;
+        }
+
+
+
+        /* 每一行的偶數格：深藍色 */
+        .block:nth-child(even) {
+            background: rgba(79, 85, 253, 0.6);
+        }
+
+        /* 偶數行的奇數格：深藍色 */
+        .row:nth-child(even) .block:nth-child(odd) {
+            background: rgba(79, 85, 253, 0.6);
+        }
+
+        /* 偶數行的偶數格：淡紫色 */
+        .row:nth-child(even) .block:nth-child(even) {
+            background: #b1b0f7;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="weave">
+        <div class="row">
+            <div class="block">git 第一次上傳</div>
+            <div class="block">→</div>
+            <div class="block">在 https://github.com/new 建立專案</div>
+            <div class="block">→</div>
+            <div class="block">Repository name：填入專案名稱</div>
+        </div>
+        <div class="row">
+            <div class="block">→</div>
+            <div class="block">Add README：ON</div>
+            <div class="block">→</div>
+            <div class="block">Create repository</div>
+
+        </div>
+        <div class="row">
+            <div class="block"><img src="./01.png" alt="" srcset=""></div>
+            <div class="block"></div>
+            <div class="block"></div>
+        </div>
+        <div class="row">
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"><img src="./02.png" alt=""></div>
+        </div>
+        <div class="row">
+            <div class="block">複製網址後</div>
+            <div class="block">→</div>
+            <div class="block">git clone 加上剛才複製的網址</div>
+        </div>
+        <div class="row">
+            <div class="block"></div>
+            <div class="block"><img src="./03.png" alt=""></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+        </div>
+        <div class="row">
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block">→</div>
+            <div class="block">全選並且複製</div>
+            <div class="block">git clone 加上剛才複製的網址</div>
+
+
+        </div>
+        <div class="row">
+            <div class="block">→</div>
+            <div class="block">回到想上傳檔案的資料夾</div>
+            <div class="block">→</div>
+            <div class="block">在資料夾空白處點擊右鍵</div>
+            <div class="block">→</div>
+            <div class="block">出現選單</div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+        </div>
+        <div class="row">
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"><img src="./04.png" alt=""></div>
+        </div>
+        <div class="row">
+            <div class="block">選擇 Open Git Bash here</div>
+            <div class="block">→</div>
+            <div class="block">Git Bash 被開啟</div>
+        </div>
+        <div class="row">
+            <div class="block"></div>
+            <div class="block"><img src="./05.png" alt=""></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+        </div>
+        <div class="row">
+            <div class="block">→</div>
+            <div class="block">對著 Git Bash 的視窗點擊右鍵</div>
+            <div class="block">→</div>
+            <div class="block">對著選單選取 Paste</div>
+            <div class="block"></div>
+        </div>
+        <div class="row">
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"><img src="./06.png" alt=""></div>
+        </div>
+        <div class="row">
+            <div class="block">→</div>
+            <div class="block">Git Bash 會顯示</div>
+        </div>
+        <div class="row">
+            <div class="block"><img src="./07.jpg" alt=""></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+        </div>
+        <div class="row">
+            <div class="block">Cloning into 'gitNote'</div>
+            <div class="block">正在建立 gitNote 資料夾並下載專案</div>
+        </div>
+        <div class="row">
+            <div class="block">Enumerating objects: 3, done.</div>
+            <div class="block">已盤點 3 個 Git 物件</div>
+        </div>
+        <div class="row">
+            <div class="block">Counting objects: 100% (3/3), done.</div>
+            <div class="block">已完成物件計數</div>
+        </div>
+        <div class="row">
+            <div class="block">Total 3 ...</div>
+            <div class="block">這次取得的物件總數為 3</div>
+        </div>
+        <div class="row">
+            <div class="block">Receiving objects: 100% (3/3), done.</div>
+            <div class="block">已接收全部物件，下載完成</div>
+        </div>
+        <div class="row">
+            <div class="block">→</div>
+            <div class="block">回到資料夾確認 git 是否自動新增了一個 與設定的專案名稱相同的資料夾</div>
+            <div class="block"></div>
+            <div class="block"></div>
+        </div>
+        <div class="row">
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block">→</div>
+            <div class="block">把想上傳的檔案，放進 Git 新增的 ___ 資料夾裡面</div>
+            <div class="block">→</div>
+            <div class="block">注意：html 檔案名稱必為 index</div>
+            <div class="block"></div>
+        </div>
+        <div class="row">
+            <div class="block">建議指令</div>
+        </div>
+        <div class="row">
+            <div class="block"><img src="./08.png" alt=""></div>
+        </div>
+        <div class="row">
+            <div class="block">在 git 生成的資料夾中開啟 Git Bash</div>
+        </div>
+        <div class="row">
+            <div class="block"><img src="./04.png" alt=""></div>
+        </div>
+        <div class="row">
+            <div class="block"></div>
+            <div class="block">→</div>
+            <div class="block">對著 Git Bash 輸入「git add .」</div>
+            <div class="block"></div>
+            <div class="block"></div>
+        </div>
+        <div class="row">
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+        </div>
+        <div class="row">
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+        </div>
+        <div class="row">
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+        </div>
+        <div class="row">
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+        </div>
+        <div class="row">
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>
